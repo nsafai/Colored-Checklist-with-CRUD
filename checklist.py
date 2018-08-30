@@ -1,3 +1,5 @@
+# https://www.makeschool.com/academy/track/captain-rainbow-s-color-checklist/captain-rainbow-s-color-checklist/putting-it-together
+
 checklist = list()
 
 def create(item):
@@ -42,7 +44,7 @@ def select(function_code):
     elif function_code == "Q":
         # This is where we want to stop our loop
         return False
-    
+
 
     # Catch all
     else:
