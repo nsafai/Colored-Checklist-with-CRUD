@@ -40,9 +40,15 @@ def select(function_code):
     elif function_code == "P":
         list_all_items()
 
+    # Stop our loop
     elif function_code == "Q":
-        # This is where we want to stop our loop
         return False
+
+    # Update
+    elif function_code == "U":
+        item_index = user_input("Index Number?")
+        input_item = user_input("Input item:")
+        update(item_index, input_item)
 
     # Catch all
     else:
@@ -59,7 +65,7 @@ running = True
 # print("running is {}".format(running))
 while running:
     selection = user_input(
-        "Press C to add to list, R to Read from list, P to display list, and Q to quit")
+        "Press C to add to list, U to update, R to Read a specific item, P to see full list, and Q to quit")
     running = select(selection)
 
 def test():
