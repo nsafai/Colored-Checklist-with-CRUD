@@ -7,7 +7,7 @@ def create(item):
     list_all_items()
 
 def read(index):
-    return checklist[index]
+    return checklist[int(index)]
 
 def update(index, item):
     checklist[index] = item
